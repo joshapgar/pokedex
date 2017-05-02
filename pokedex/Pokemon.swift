@@ -126,7 +126,7 @@ class Pokemon {
         self._name = name
         self._pokedexId = pokedexId
         
-        self._pokemonURL = "\(URL_BASE)\(URL_POKEMON)\(self._pokedexId)/"
+        self._pokemonURL = "\(URL_BASE)\(URL_POKEMON)\(self.pokedexId)/"
     }
     
     func downloadPokemonDetail(completed: @escaping DownloadComplete) {
